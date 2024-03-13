@@ -22,15 +22,15 @@ hdri.load("web_assets/gamrig_2k.hdr", function(texture) {
 	texture.mapping = THREE.EquirectangularReflectionMapping;
 	scene.background = texture;
 	scene.environment = texture;
-})
 
-var loader = new GLTFLoader();
-var obj;
-
-loader.load("web_assets/website.gltf", function(gltf) {
+	var loader = new GLTFLoader();
+	var obj;
+	loader.load("web_assets/website.gltf", function(gltf) {
 	obj = gltf.scene;
 	scene.add(gltf.scene);
 })
+})
+
 
 const controls = new OrbitControls( camera, renderer.domElement );
 
