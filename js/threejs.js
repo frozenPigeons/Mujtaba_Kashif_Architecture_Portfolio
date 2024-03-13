@@ -15,19 +15,19 @@ document.body.appendChild( renderer.domElement );
 camera.position.set(0,2,22)
 camera.rotation.x += 100
 
-// renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
 
-// const hdri = new RGBELoader();
-// hdri.load("assets/gamrig_2k.hdr", function(texture) {
-// 	texture.mapping = THREE.EquirectangularReflectionMapping;
-// 	scene.background = texture;
-// 	scene.environment = texture;
-// })
+const hdri = new RGBELoader();
+hdri.load("./assets/gamrig_2k.hdr", function(texture) {
+	texture.mapping = THREE.EquirectangularReflectionMapping;
+	scene.background = texture;
+	scene.environment = texture;
+})
 
 var loader = new GLTFLoader();
 var obj;
 
-loader.load("/assets/website.gltf", function(gltf) {
+loader.load("./assets/website.gltf", function(gltf) {
 	obj = gltf.scene;
 	scene.add(gltf.scene);
 })
