@@ -165,6 +165,7 @@ W:1272px
 }
 
 .slide:nth-child(3) {
+    z-index: 2;
     grid-template-columns: 30px 450px 30px 732px 30px;
     grid-template-rows: 94px 30px 75px 30px 308px 30px 153px 30px;
 }
@@ -203,7 +204,6 @@ W:1272px
 .slide:nth-child(5) {
     grid-template-columns: 30px 391px 135px 350px 30px 306px 30px;
     grid-template-rows: 94px 30px 75px 30px 201px 30px 230px 30px 30px;
-    overflow: hidden;
 }
 
 .close {
