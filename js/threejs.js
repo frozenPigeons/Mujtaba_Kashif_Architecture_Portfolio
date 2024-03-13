@@ -27,7 +27,7 @@ camera.rotation.x += 100
 var loader = new GLTFLoader();
 var obj;
 
-loader.load("assets/website.gltf", function(gltf) {
+loader.load("/assets/website.gltf", function(gltf) {
 	obj = gltf.scene;
 	scene.add(gltf.scene);
 })
