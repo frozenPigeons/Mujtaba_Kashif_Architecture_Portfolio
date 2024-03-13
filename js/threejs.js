@@ -18,7 +18,7 @@ camera.rotation.x += 100
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 
 const hdri = new RGBELoader();
-hdri.load("assets/gamrig_2k.hdr", function(texture) {
+hdri.load("/assets/gamrig_2k.hdr", function(texture) {
 	texture.mapping = THREE.EquirectangularReflectionMapping;
 	scene.background = texture;
 	scene.environment = texture;
