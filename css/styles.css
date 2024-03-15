@@ -23,7 +23,7 @@ body {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* Display Size 
@@ -46,8 +46,9 @@ W:1272px
 }
 
 .slide:nth-child(1) {
-    grid-template-columns: 30px 391px 285px 30px 506px 30px;
-    grid-template-rows: 94px 30px 75px 30px 401px 30px 60px 30px;
+    z-index: 3;
+    grid-template-columns: 2.3585% 30.739% 22.4056% 2.3585% 39.77987% 2.3585%;
+    grid-template-rows: 12.533% 4% 10% 4% 53.4666% 4% 8% 4%;
 }
 
 .nav {
@@ -56,7 +57,7 @@ W:1272px
     grid-row-start: 1;
     grid-row-end: 1;
     background: white;
-    padding:20px;
+    padding: 1.573%;
     display: grid;
     grid-template-columns: 7fr 3fr;
 }
@@ -78,7 +79,7 @@ W:1272px
 .banner {
     grid-column-start: 1;
     grid-column-end: 1;
-    padding-left: 20px;
+    padding-left: 2.3275%;
 }
 
 .page_number {
@@ -87,12 +88,12 @@ W:1272px
     font-optical-sizing: auto;
     font-weight: 540;
     font-style: normal;
-    font-size: 42px;
+    font-size: 262.5%;
     vertical-align: middle;
     color: #e4e4e4;
     grid-column-start: 2;
     grid-column-end: 2;
-    padding-right: 10px;
+    padding-right: 2.71%;
 }
 
 .description {
@@ -123,8 +124,8 @@ W:1272px
 }
 
 .slide:nth-child(2) {
-    grid-template-columns: 30px 391px 30px 424px 30px 337px 30px;
-    grid-template-rows: 94px 30px 75px 30px 491px 30px;
+    grid-template-columns: 2.3585% 30.73899% 2.3585% 33.333% 2.3585% 26.4937% 2.3585%;
+    grid-template-rows: 12.533% 4% 10% 4% 65.4667% 4%;
 }
 
 
@@ -147,7 +148,7 @@ W:1272px
     grid-column-end: 5;
 }
 
-.prototype >img {
+.prototype > img {
     height: 569%;
     width: 100%;
 }
@@ -165,9 +166,8 @@ W:1272px
 }
 
 .slide:nth-child(3) {
-    z-index: 2;
-    grid-template-columns: 30px 450px 30px 732px 30px;
-    grid-template-rows: 94px 30px 75px 30px 308px 30px 153px 30px;
+    grid-template-columns: 2.35849% 35.377% 2.35849% 57.5472% 2.35849%;
+    grid-template-rows: 12.533% 4% 10% 4% 41.066% 4% 20.4% 4%;
 }
 
 .active {
@@ -197,13 +197,13 @@ W:1272px
 }
 
 .slide:nth-child(4) {
-    grid-template-columns: 30px 391px 285px 30px 506px 30px;
-    grid-template-rows: 94px 30px 75px 30px 401px 30px 60px 30px;
+    grid-template-columns: 2.35849% 30.739% 22.4056% 2.35849% 39.77987% 2.35849%;
+    grid-template-rows: 12.533% 4% 10% 4% 53.466% 4% 8% 4%;
 }
 
 .slide:nth-child(5) {
-    grid-template-columns: 30px 391px 135px 350px 30px 306px 30px;
-    grid-template-rows: 94px 30px 75px 30px 201px 30px 230px 30px 30px;
+    grid-template-columns: 2.35849% 30.739% 10.6132% 27.51572% 2.35849% 24.0566% 2.35849%;
+    grid-template-rows: 12.533% 4% 10% 4% 26.8% 4% 30.666% 4% 4%;
 }
 
 .close {
